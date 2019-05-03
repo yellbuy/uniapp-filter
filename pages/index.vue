@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import goodsFilter from '@/components/filter/index.vue';
+import goodsFilter from '@/components/yb-filter/index.vue';
 import utils from '@/common/utils.js';
 const pageSize=10;
 let pageIndex = 0;

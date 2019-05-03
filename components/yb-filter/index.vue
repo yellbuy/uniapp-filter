@@ -8,9 +8,9 @@
 				<text class="text-df" v-else>{{ activeOption && activeOption.name || item.title }}</text>
 				<text class="grace-iconfont icon-arrow-down" v-if="item.filterType==2"></text>
 				<text class="grace-iconfont" v-else-if="item.filterType==0"></text>
-				<image src="/static/img/sort0.png" mode="widthFix" v-else-if="activeIndex!=index"></image>
-				<image src="/static/img/sort2.png" mode="widthFix" v-else-if="activeIndex==index && activeAscState"></image>
-				<image src="/static/img/sort1.png" mode="widthFix" v-else-if="activeIndex==index"></image>
+				<image src="/static/yb-filter/img/sort0.png" mode="widthFix" v-else-if="activeIndex!=index"></image>
+				<image src="/static/yb-filter/img/sort2.png" mode="widthFix" v-else-if="activeIndex==index && activeAscState"></image>
+				<image src="/static/yb-filter/img/sort1.png" mode="widthFix" v-else-if="activeIndex==index"></image>
 			</view>
 			<view class="text-xxl padding-lr padding-top-xs" @tap="changeShape" v-if="showShape">
 				<text :class="['text-red', curShapeValue == 2 ? 'cuIcon-apps' : 'cuIcon-list']"></text>
