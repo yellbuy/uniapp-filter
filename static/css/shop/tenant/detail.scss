@@ -1,0 +1,87 @@
+
+.page-shop-tenant-detail page {
+	background-color: white;
+}
+
+.page-shop-tenant-detail .coupon {
+	width: 100%;
+	margin-left: 540upx;
+	padding-top: 10upx;
+	border-top: 2upx solid silver;
+}
+
+.page-shop-tenant-detail .coupon-title {
+	background-color: #FFB400;
+	padding: 0 20upx;
+	border-radius: 30upx;
+	width: 100upx;
+	text-align: center;
+}
+
+.page-shop-tenant-detail .tenant-name {
+	text-align: center;
+	border-bottom: 2upx solid #D9D9D9;
+}
+
+.page-shop-tenant-detail .tenant-rate {
+	padding: 8upx 6upx 0 0;
+}
+
+.page-shop-tenant-detail .tenant-logo {
+	margin: 10upx 20upx 0 0;
+	height: 120upx;
+	width: 120upx;
+}
+
+.page-shop-tenant-detail .tenant-collect{
+	position: absolute;
+	right: 0;
+	top: 420upx;
+}
+
+.page-shop-tenant-detail .tenant-collect-btn{
+	width: 100upx;
+	height: 50upx;
+	line-height: 50upx;
+	padding: 0;
+	font-size: 26upx;
+	border-radius: 10upx 0 0 10upx;
+}
+
+.page-shop-tenant-detail .tenant-collect-btn::after{
+	border-radius: 0;
+}
+
+.page-shop-tenant-detail .tenant-addr {
+	padding: 16upx 30upx;
+	border-bottom: 10upx solid #D9D9D9;
+}
+
+.page-shop-tenant-detail .tenant-addr view {
+	line-height: 48upx;
+}
+
+.page-shop-tenant-detail .tenant-dianhua {
+	width: 100upx;
+	height: 60upx;
+	line-height: 60upx;
+	font-size: 50upx;
+	padding-left: 20upx;
+	margin-top: 40upx;
+	/* border-left: 3upx solid #0081ff; */
+}
+
+.page-shop-tenant-detail .tenant-desc-title {
+	text-align: center;
+	padding: 10upx;
+	border-bottom: 2upx solid #D9D9D9;
+}
+
+.page-shop-tenant-detail .tenant-consult-btn{
+	width: 160upx;
+	height: 50upx;
+	line-height: 50upx;
+	padding: 0;
+	font-size: 28upx;
+	border-radius: 30upx;
+}

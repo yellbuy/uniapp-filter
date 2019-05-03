@@ -1,0 +1,105 @@
+var provinceData = [{
+	"label": "北京",
+	"value": 2
+}, {
+	"label": "安徽",
+	"value": 3
+}, {
+	"label": "福建",
+	"value": 4
+}, {
+	"label": "甘肃",
+	"value": 5
+}, {
+	"label": "广东",
+	"value": 6
+}, {
+	"label": "广西",
+	"value": 7
+}, {
+	"label": "贵州",
+	"value": 8
+}, {
+	"label": "海南",
+	"value": 9
+}, {
+	"label": "河北",
+	"value": 10
+}, {
+	"label": "河南",
+	"value": 11
+}, {
+	"label": "黑龙江",
+	"value": 12
+}, {
+	"label": "湖北",
+	"value": 13
+}, {
+	"label": "湖南",
+	"value": 14
+}, {
+	"label": "吉林",
+	"value": 15
+}, {
+	"label": "江苏",
+	"value": 16
+}, {
+	"label": "江西",
+	"value": 17
+}, {
+	"label": "辽宁",
+	"value": 18
+}, {
+	"label": "内蒙古",
+	"value": 19
+}, {
+	"label": "宁夏",
+	"value": 20
+}, {
+	"label": "青海",
+	"value": 21
+}, {
+	"label": "山东",
+	"value": 22
+}, {
+	"label": "山西",
+	"value": 23
+}, {
+	"label": "陕西",
+	"value": 24
+}, {
+	"label": "上海",
+	"value": 25
+}, {
+	"label": "四川",
+	"value": 26
+}, {
+	"label": "天津",
+	"value": 27
+}, {
+	"label": "西藏",
+	"value": 28
+}, {
+	"label": "新疆",
+	"value": 29
+}, {
+	"label": "云南",
+	"value": 30
+}, {
+	"label": "浙江",
+	"value": 31
+}, {
+	"label": "重庆",
+	"value": 32
+}, {
+	"label": "香港",
+	"value": 33
+}, {
+	"label": "澳门",
+	"value": 34
+}, {
+	"label": "台湾",
+	"value": 35
+}]
+
+export default provinceData;

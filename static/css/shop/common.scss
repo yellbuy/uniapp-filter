@@ -1,0 +1,28 @@
+.div-margin {
+	height: 100upx;
+}
+
+.page-index-index .uni-grid-item-image {
+	width: 90upx !important;
+	height: 90upx !important;
+}
+
+.page-index-index .uni-grid-item-text {
+	font-size: 30upx !important;
+	margin-top: 0 !important;
+}
+
+.page-forum-index .uni-grid-item-image {
+	width: 90upx !important;
+	height: 90upx !important;
+}
+
+.page-forum-index .uni-grid-item-text {
+	font-size: 28upx !important;
+	margin-top: 0 !important;
+}
+
+.page-forum-index .uni-grid-item {
+    max-height: 160upx; //网格数量不固定，必须设置最大高度，否则会有空白区域
+	overflow: hidden; //若不设置溢出隐藏，则可能导致下方页面无法点击
+}
