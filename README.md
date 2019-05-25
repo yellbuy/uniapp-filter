@@ -9,10 +9,11 @@
 ## 1、导入组件
 App.vue文件中引入全局样式
 <style lang="scss">
-	@import './graceUI/graceUI.css';
-	@import './colorui/main.css';
-	@import './colorui/icon.css';
+		@import './graceUI/graceUI.css';
+		@import './colorui/main.css';
+		@import './colorui/icon.css';
 </style>
+
 ## 2、导入组件
 import goodsFilter from '@/components/filter/index.vue';
 ## 3、设置组件属性
@@ -42,7 +43,6 @@ options：下拉选项，filterType为2时有效
 效果展示：
 ## 小程序体验
 ## QQ：997735419
-## 商城小程序：提供租用，有偿等技术服务
 ![image](https://github.com/yellbuy/uniapp-filter/blob/master/demo/qrcode.jpg?raw=true)
 ## 快速预览
 ![image](https://github.com/yellbuy/uniapp-filter/blob/master/demo/1.png?raw=true)
@@ -50,6 +50,7 @@ options：下拉选项，filterType为2时有效
 ![image](https://github.com/yellbuy/uniapp-filter/blob/master/demo/3.png?raw=true)
 ![image](https://github.com/yellbuy/uniapp-filter/blob/master/demo/4.png?raw=true)
 ## 小程序效果
+## 商城小程序：提供租用，有偿等技术服务
 ![image](https://github.com/yellbuy/uniapp-filter/blob/master/demo/module.png?raw=true)
 ![image](https://github.com/yellbuy/uniapp-filter/blob/master/demo/0.jpg?raw=true)
 ![image](https://github.com/yellbuy/uniapp-filter/blob/master/demo/1.1.jpg?raw=true)
