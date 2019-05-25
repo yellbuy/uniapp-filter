@@ -50,7 +50,7 @@ options：下拉选项，filterType为2时有效
 ![image](https://github.com/yellbuy/uniapp-filter/blob/master/demo/3.png?raw=true)
 ![image](https://github.com/yellbuy/uniapp-filter/blob/master/demo/4.png?raw=true)
 ## 小程序效果
-![image](https://github.com/yellbuy/uniapp-filter/blob/master/demo/module.jpg?raw=true)
+![image](https://github.com/yellbuy/uniapp-filter/blob/master/demo/module.png?raw=true)
 ![image](https://github.com/yellbuy/uniapp-filter/blob/master/demo/0.jpg?raw=true)
 ![image](https://github.com/yellbuy/uniapp-filter/blob/master/demo/1.1.jpg?raw=true)
 ![image](https://github.com/yellbuy/uniapp-filter/blob/master/demo/1.2.jpg?raw=true)
