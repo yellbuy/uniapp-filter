@@ -1,11 +1,23 @@
 # uniapp-filter
 基于uniapp的过滤、排序、模板选择通用组件，支持APP，H5和微信小程序
+# 版本历史
+## v1.1.0 
+下拉选项可记住当前选择
+## v1.0.0 
+首次发布
 # 使用方式
 ## 1、导入组件
+App.vue文件中引入全局样式
+<style lang="scss">
+	@import './graceUI/graceUI.css';
+	@import './colorui/main.css';
+	@import './colorui/icon.css';
+</style>
+## 2、导入组件
 import goodsFilter from '@/components/filter/index.vue';
-## 2、设置组件属性
+## 3、设置组件属性
 <goodsFilter :filters="goodsFilters" @sortChanged="goodsFilterChanged" @shapeChanged="goodsTemplateChanged" :showShape="true" :shapeValue="2"></goodsFilter>
-## 3、关键属性定义参考
+## 4、关键属性定义参考
 ### 1）filters：参考如下
   [
 			{title:'类别',value:0,filterType:2,
@@ -30,6 +42,7 @@ options：下拉选项，filterType为2时有效
 效果展示：
 ## 小程序体验
 ## QQ：997735419
+## 商城小程序：提供租用，有偿等技术服务
 ![image](https://github.com/yellbuy/uniapp-filter/blob/master/demo/qrcode.jpg?raw=true)
 ## 快速预览
 ![image](https://github.com/yellbuy/uniapp-filter/blob/master/demo/1.png?raw=true)

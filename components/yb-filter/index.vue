@@ -8,17 +8,17 @@
 				<text class="text-df" v-else>{{ activeOption && activeOption.name || item.title }}</text>
 				<text class="grace-iconfont icon-arrow-down" v-if="item.filterType==2"></text>
 				<text class="grace-iconfont" v-else-if="item.filterType==0"></text>
-				<image src="/static/yb-filter/img/sort0.png" mode="widthFix" v-else-if="activeIndex!=index"></image>
-				<image src="/static/yb-filter/img/sort2.png" mode="widthFix" v-else-if="activeIndex==index && activeAscState"></image>
-				<image src="/static/yb-filter/img/sort1.png" mode="widthFix" v-else-if="activeIndex==index"></image>
+				<image src="/static/img/sort0.png" mode="widthFix" v-else-if="activeIndex!=index"></image>
+				<image src="/static/img/sort2.png" mode="widthFix" v-else-if="activeIndex==index && activeAscState"></image>
+				<image src="/static/img/sort1.png" mode="widthFix" v-else-if="activeIndex==index"></image>
 			</view>
-			<view class="text-xxl padding-lr padding-top-xs" @tap="changeShape" v-if="showShape">
+			<view class="text-xxl padding-lr margin-top-sm"  @tap="changeShape" v-if="showShape">
 				<text :class="['text-red', curShapeValue == 2 ? 'cuIcon-apps' : 'cuIcon-list']"></text>
 			</view>
 			<!-- 下拉选项 -->
-			<view class='grace-filter-options' v-if="activeIndex == index && showOption" v-for="(item, index) in filters" :key="index">
+			<view class='grace-filter-options' v-if="activeIndex == index && showOption" v-for="(item, index) in filters" :key="index+10000">
 				<view :class="[activeOption && (opt.value ===  activeOption.value) ? 'option current' : 'option']" 
-					:data-index="index" :data-option="opt" v-for="(opt, optIndex) in item.options||[]" :key="optIndex" @tap="changeSort" >
+					:data-index="index" :data-optindex="optIndex" v-for="(opt, optIndex) in item.options||[]" :key="optIndex+100000" @tap="changeSort" >
 					{{opt.name}}<text class="cuIcon-right text-gray"></text>
 				</view>
 			</view>
@@ -90,8 +90,14 @@ export default {
 	methods: {
 		//排序更改事件
 		changeSort:function(e){
-			const index=e.currentTarget.dataset.index;
-			const option=e.currentTarget.dataset.option;
+			const index=parseInt(e.currentTarget.dataset.index);
+			const optIndex = e.currentTarget.dataset.optindex;
+			const options= this.filters[index].options;
+			let option=null;
+			if(options && optIndex){
+				option=options[parseInt(optIndex)]
+			}
+			
 			const curActiveItem=this.filters[index]
 			const filterType=curActiveItem.filterType || 0
 			// 点击索引等于自身
@@ -124,6 +130,7 @@ export default {
 					// 点击了选项，则关闭显示以便显示查询结果
 					this.showOption=false
 					this.activeOption=option
+					console.log('this.activeOption:',this.activeOption)
 				}
 			}
 			this.activeIndex=index
@@ -133,7 +140,7 @@ export default {
 			}
 			const sortField = curActiveItem.value !== undefined ? curActiveItem.value:index
 			var data={"sort":sortField,"order":this.activeAscState?1:-1,"option": this.activeOption && this.activeOption.value || null}
-			console.log("this.activeOption",data)
+			//console.log("this.activeOption",data)
 			this.$emit("sortChanged",data)
 		},
 		changeShape:function(){
